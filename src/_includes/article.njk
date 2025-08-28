@@ -1,0 +1,22 @@
+<!-- ---
+title: Blog
+layout: "base.njk"
+cssPath: "/css/blog.css"
+eleventyImport:
+collections: ["post"]
+---
+{% include 'nav.njk' %}
+<div class="space"></div>
+
+<div class="picture">
+  <a href="/blog"><p>VOLTAR</p></a>
+  {% if thumbnail %}
+    <img src="{{ thumbnail }}" alt="" />
+  {% endif %} 
+</div>
+<section class="text">
+  {{ texto | markdown | safe }}
+  <p>Dra. Franciane Obara<br/>Infertilidade Conjugal e Reprodução Humana<br/>CRM-PR 31112 | RQE 2778 e 23106<br/><br/><br/>📍 Eco Medical Center: R. Goiás, 70 - Curitiba/PR<br/>📱 Triamare Reprodução Humana (41) 98848-8000</p><a class="begeButton" style="width: 288px;" href="https://api.whatsapp.com/send?phone=554192816648&text=Estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta."> AGENDAR UMA CONSULTA</a>
+</section>
+
+{% include 'footer.njk' %} -->

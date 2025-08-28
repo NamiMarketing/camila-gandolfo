@@ -1,0 +1,161 @@
+@use "./colors" as *;
+
+$montserrat: "Montserrat", sans-serif;
+$ivy: "Montserrat", sans-serif;
+
+
+strong {
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html,
+body,
+#root {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  font-family: $montserrat;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: $background;
+  position: relative;
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: $montserrat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $montserrat;
+}
+
+p {
+  font-size: 2.3rem;
+  color: $verde-900;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 2.4rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.9rem;
+}
+
+ul {
+  list-style: none;
+
+  li {
+    font-size: 1.6rem;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.whatsapp {
+  position: fixed;
+  z-index: 10;
+  bottom: 3rem;
+  right: 5rem;
+  width: 10.5rem;
+  height: 10.5rem;
+
+  @media screen and (max-width: 700px) {
+    right: 20px;
+  }
+}
+
+.only-mobile {
+  display: none !important;
+}
+.mobile-tablet{
+  display: none !important;
+}
+
+@media screen and (max-width: 700px) {
+  .only-mobile {
+    display: initial !important;
+  }
+
+  .mobile-tablet{
+    display: initial !important;
+  }
+  .tablet-desktop{
+    display: none !important;
+  }
+  .only-desktop {
+    display: none !important;
+  }
+}
+@media screen and (min-width:701px) and (max-width:1260px){
+  .mobile-tablet{
+    display: initial !important;
+  }
+  .only-desktop{
+    display: none !important;
+  }
+}
+
+
+
+@keyframes appear {
+  0% {
+      transform: translatex(10%);
+      opacity: 0;
+  }
+
+  100% {
+      transform: translatex(0);
+      opacity: 1;
+  }
+}
+

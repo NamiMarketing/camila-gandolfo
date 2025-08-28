@@ -1,0 +1,41 @@
+<!-- ---
+title: Dra. Camila Gandolfo - Blog
+layout: "base.njk"
+cssPath: "/css/blog.css"
+eleventyImport:
+collections: ["post"]
+---
+{% include 'nav.njk' %}
+
+
+<div class="space"></div>
+<header class="tablet-desktop">
+    <div class="header-picture">
+      <img src="../img/blog/header.png" alt="">
+    </div>
+</header>  
+<header class="only-mobile">
+    <div class="header-picture">
+        <img src="../img/blog/header-mob.png" alt="">
+    </div>
+</header>
+
+
+<section class="main">
+    {% for post in collections.post | reverse | limit (8) %}
+      <div class="blog-item">
+        <a href="{{ post.url }}">
+          <img src="{{ post.data.thumbnail }}" alt="" />
+          <div class="title">
+            <h3>{{ post.data.title }}</h3>
+            <h4>Leia mais</h4>
+          </a> 
+        </div>
+      </div>
+    {%- endfor %}
+      
+  </section>
+
+
+
+{% include 'footer.njk' %} -->

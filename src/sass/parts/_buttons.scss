@@ -1,0 +1,41 @@
+@use "./colors" as *;
+
+.brownButton {
+  background-color: $marrom-900;
+  color: $verde-100;
+  padding: 2rem 2.6rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: filter 0.2s;
+  border-radius: 30px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  width: fit-content;
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+}
+
+.whiteButton {
+  background-color: $verde-100;
+  color: $verde-900;
+  padding: 2rem 2.6rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: filter 0.2s;
+  border-radius: 30px;
+  text-transform: uppercase;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  z-index: 10;
+  width: fit-content;
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+}
