@@ -43,6 +43,52 @@
             }
         }
     }
+    @media screen and (max-width:700px) {
+        .wrap-cuidado{
+            display: flex;
+            flex-direction: column;
+            gap: 0rem;
+            align-items: center;
+            padding: 6.7rem 0 30rem;
+            .right-img{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 70%;
+            }
+            .left-cuidado{
+                display: flex;
+                flex-direction: column;
+                h1{
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    letter-spacing: 0%;
+                    margin-left: 5vw;
+                }
+                h2{
+                    font-size: 1.6rem;
+                    line-height: 1.6rem;
+                    margin-left: 5vw;
+                    margin-top: 1rem;
+                }
+                p{
+                    font-size: 1.6rem;
+                    line-height: 2.3rem;
+                    letter-spacing: 0%;
+                    margin-left: 5vw;
+                    width: 90%;
+                    margin-top: 3.5rem;
+                }
+                a{
+                    margin: 4rem 5vw 0;
+                }
+                img{
+                    width: 87%;
+                    margin: auto;
+                }
+            }
+        }
+    }
 }
 
 .tratamentos{
@@ -57,11 +103,12 @@
         color: $verde-900;
         text-align: center;
         margin-top: -39rem;
+        strong{
+            font-family: $montserrat;
+        }
     }
     .swiper{
-        margin-top: 6rem;
         margin: 6rem 10rem 0;
-        border-radius: 30px;
     }
     .swiper-wrapper{
         .swiper-slide{
@@ -70,19 +117,22 @@
             width: 40rem !important;
             height: 49rem !important;
             position: relative;
-            >img{
+            border-radius: 30px;
+            .back-image{
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
                 z-index: 2;
+                border-radius: 30px;
             }
             .text{
                 position: absolute;
                 display: flex;
                 z-index: 5;
-                bottom: 5rem;
+                bottom: 6.1rem;
+                transform: translateY(50%);
                 align-items: center;
                 width: 100%;
                 justify-content: center;
@@ -95,10 +145,14 @@
                     width: 21.6rem;
                     text-align: center;
                 }
-                img{
-                    position: absolute;
-                    right: 2.5rem;
-                }
+            }
+            .open-link{
+                position: absolute;
+                width: 5.8rem;
+                height: 5.8rem;
+                right: 2.5rem;
+                bottom: 3.1rem;
+                z-index: 4;
             }
         }
         .swiper-slide::after{
@@ -110,6 +164,7 @@
             height: 100%;
             z-index: 3;
             background: linear-gradient(180deg, rgba(242, 244, 234, 0) 30.14%, rgba(242, 244, 234, 0.5) 100%);
+            border-radius: 0 0 30px 30px;
         }
     }
     .swiper-button-prev{
@@ -123,7 +178,7 @@
         width: 2rem;
         left: unset;
     }
-    p{
+    >p{
         font-size: 2.2rem;
         line-height: 3.2rem;
         letter-spacing: 0%;
@@ -146,6 +201,89 @@
         bottom: 5.6rem;
         left: 0;
         z-index: 5;
+    }
+    
+    @media screen and (max-width:700px) {
+        h1{
+            font-size: 2rem;
+            line-height: 2rem;
+            letter-spacing: 0%;
+            margin-top: -22rem;
+            text-align: left;
+            margin-left: 5vw;
+        }
+        .swiper{
+            margin: 3.8rem 2.4rem 0;
+        }
+        .swiper-wrapper{
+            .swiper-slide{
+                width: 20.8rem !important;
+                height: 26rem !important;
+                border-radius: 16px;
+                .back-image{
+                    border-radius: 16px;
+                }
+                .open-link{
+                    width: 3rem;
+                    height: 3rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    position: absolute;
+                    right: unset;
+                    bottom: 1rem;
+                }
+                .text{
+                    position: absolute;
+                    z-index: 5;
+                    bottom: 5.7rem;
+                    p{
+                        font-size: 1.5rem;
+                        line-height: 1.5rem;
+                        letter-spacing: 0%;
+                        width: 90%;
+                        text-align: center;
+                    }
+                }
+            }
+            .swiper-slide::after{
+                border-radius: 16px;
+            }
+        }
+        .swiper-button-prev{
+            top: -3rem;
+            left: 6px;
+            width: 12px;
+        }
+        .swiper-button-next{
+            top: -3rem;
+            right: 6px;
+            width: 12px;
+            left: unset;
+        }
+        >p{
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            margin: 4rem auto 3rem;
+            width: 31.2rem;
+        }
+        .botoes{
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin: 0 auto 9.5rem;
+            align-items: center;
+            justify-content: center;
+            a{
+                width: 18rem;
+            }
+        }
+        >img{
+            position: absolute;
+            bottom: 4rem;
+            left: 0;
+            z-index: 5;
+            width: 28rem;
+        }
     }
 }
 
@@ -186,10 +324,43 @@
             letter-spacing: 0%;
         }
     }
+    @media screen and (max-width:700px) {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        gap: 4rem;
+        max-width: 700px;
+        padding: 7rem 0 6rem;
+        h1{
+            font-size: 2.8rem;
+            line-height: 2.8rem;
+            letter-spacing: 5%;
+            font-weight: 400;
+            font-family: $ivy;
+            color: $marrom-100;
+        }
+        .left-espaco{
+            aspect-ratio: 312/240;
+            width: 100%;
+            iframe{
+                border-radius: 16px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .right-espaco{
+            gap: 3rem;
+            width: 100%;
+            p{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+            }
+        }
+    }
 }
 
 .pre-footer{
-    aspect-ratio: 144/50;
+    aspect-ratio: 36/30;
     width: 100%;
     height: auto;
     iframe{

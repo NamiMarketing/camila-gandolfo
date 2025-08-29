@@ -1,0 +1,57 @@
+@use 'index' as *;
+
+.contato{
+    padding: 20rem 0 12rem;
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        width: 82rem;
+        margin: 0 auto 9rem;
+        h1{
+            font-size: 4rem;
+            line-height: 4.6rem;
+            letter-spacing: 5%;
+            font-weight: 400;
+            text-align: center;
+            margin: auto;
+            font-family: $ivy;
+            color: $verde-900;
+        }
+        >p{
+            font-size: 2.4rem;
+            line-height: 4.6rem;
+            letter-spacing: 5%;
+            font-weight: 500;
+        }
+    }
+    .wrap-contato{
+        display: flex;
+        width: 85%;
+        margin: auto;
+        gap: 11rem;
+        align-items: center;
+        justify-content: center;
+        .left-contato{
+            display: flex;
+            flex-direction: column;
+            gap: 2.3rem;
+            .item{
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+                img{
+                    width: 3.2rem;
+                    height: 3.2rem;
+                }
+                p{
+                    font-size: 2rem;
+                    line-height: 3rem;
+                    font-weight: 500;
+                    width: 46.5rem;
+                }
+            }
+        }
+    }
+}

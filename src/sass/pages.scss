@@ -1,0 +1,81 @@
+@use 'index' as *;
+
+.pages{
+    width: 85%;
+    margin: 11rem auto 14rem;
+
+    .back{
+        display: flex;
+        gap: 1.8rem;
+        align-items: center;
+        margin-bottom: 5rem;
+        h2{
+            font-size: 2rem;
+            line-height: 2rem;
+            letter-spacing: 0%;
+            font-weight: 500;
+            color: $verde-900;
+        }
+    }
+    .wrap-info{
+        display: flex;
+        gap: 8.5rem;
+        align-items: flex-start;
+        img{
+            aspect-ratio: 42/62;
+            width: 42rem;
+            height: auto;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+        .right-info{
+            display: flex;
+            flex-direction: column;
+            h1{
+                font-size: 5rem;
+                line-height: 5rem;
+                letter-spacing: 5%;
+                font-weight: 400;
+                font-family: $ivy;
+                color: $verde-900;
+            }
+            h2{
+                font-size: 3rem;
+                line-height: 4.5rem;
+                letter-spacing: 0%;
+                font-weight: 700;
+                color: $verde-900;
+                margin: 1rem 0 6rem;
+            }
+            p{
+                margin-bottom: 4rem;
+                font-size: 2rem;
+                line-height: 2.8rem;
+                letter-spacing: 2%;
+            }
+            ul{
+                margin-bottom: 4rem;
+                li{
+                    font-size: 2rem;
+                    line-height: 2.8rem;
+                    letter-spacing: 2%;
+                    color: $verde-900;
+                    list-style: disc;
+                    margin-left: 2.5rem;
+                    padding-left: 1rem;
+                }
+            }
+            ol{
+                margin-bottom: 4rem;
+                li{
+                    font-size: 2rem;
+                    line-height: 2.8rem;
+                    letter-spacing: 2%;
+                    color: $verde-900;
+                    margin-left: 2.5rem;
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+}

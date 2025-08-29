@@ -7,12 +7,13 @@ cssPath: "/css/home.css"
 {% include 'nav.njk' %}
 
 <header class="header">
-    <img src="../img/home/header.png" alt="Foto de uma menina fazendo exercício na fisioterapia">
+    <img class="tablet-desktop" src="../img/home/header.png" alt="Foto de uma menina fazendo exercício na fisioterapia">
+    <img class="only-mobile" src="../img/home/header-mob.png" alt="Foto de uma menina fazendo exercício na fisioterapia">
     <div class="header-text">
         <h2>
             Dedicação, técnica e cuidado em cada atendimento.
         </h2>
-        <a href="" class="brownButton">Vamos cuidar de você?</a>
+        <a href="https://api.whatsapp.com/send?phone=5541999683915&text=Estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." class="brownButton">Vamos cuidar de você?</a>
     </div>
 </header>
 
@@ -22,11 +23,12 @@ cssPath: "/css/home.css"
             <h1>Cuidado que vai além da dor:</h1>
             <h2>Tratamento com olhar individualizado.</h2>
             <img src="../img/home/left-img.png" alt="Linha de fundo" class="left-cuidado"">
+            <img class="only-mobile" src="../img/home/camila.png" alt="Foto da Dra. Camila sorrindo">
             <p>Dra. Camila é fisioterapeuta com mais de 20 anos de experiência em Curitiba, onde atua em seu próprio consultório. Especialista em Osteopatia pela Escuela de Osteopatía de Madrid e em Acupuntura pelo IBRATE, também possui diversas formações complementares que ampliam sua abordagem clínica. Reconhecida pelo atendimento personalizado, dedica-se a tratar cada paciente de forma única, unindo técnica, sensibilidade e compromisso com o cuidado.</p>
-            <a href="" class="brownButton">Vamos cuidar de você?</a>
+            <a href="https://api.whatsapp.com/send?phone=5541999683915&text=Estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." class="brownButton">Vamos cuidar de você?</a>
         </div>
         <div class="right-cuidado">
-            <img src="../img/home/camila.png" alt="Foto da Dra. Camila sorrindo">
+            <img class="tablet-desktop" src="../img/home/camila.png" alt="Foto da Dra. Camila sorrindo">
         </div>
         <img src="../img/home/right-cuidado.png" class="right-img" alt="Imagem de fundo com a logo da Dra. Camila">
     </div>
@@ -39,48 +41,48 @@ cssPath: "/css/home.css"
     </h1>
     <div class="swiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="../img/home/osteopatia.png" alt="imagem de uma pessoa deitada com um profissionais pressionando as costas">
-                <a class="text" href="/osteopatia">
+            <a href="/osteopatia" class="swiper-slide">
+                <img class="back-image" src="../img/home/osteopatia.png" alt="imagem de uma pessoa deitada com um profissionais pressionando as costas">
+                <div class="text">
                     <p>Osteopatia</p>
-                    <img src="../img/svg/flecha-marrom.svg" alt="flecha para abrir o link">
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <img src="../img/home/hernia.png" alt="imagem de uma pessoa de costas com profissional apertando na região da nuca">
-                <a class="text" href="hernia-de-disco">
+                </div>
+                <img src="../img/svg/flecha-marrom.svg" class="open-link" alt="flecha para abrir o link">
+            </a>
+            <a href="/hernia-de-disco" class="swiper-slide">
+                <img class="back-image" src="../img/home/hernia.png" alt="imagem de uma pessoa de costas com profissional apertando na região da nuca">
+                <div class="text">
                     <p>Hérnia de disco</p>
-                    <img src="../img/svg/flecha-marrom.svg" alt="flecha para abrir o link">
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <img src="../img/home/torcicolo.png" alt="Imagem de um rapaz de costas com uma mão posicionada sobre a nuca e outra nas costas">
-                <a class="text" href="torcicolo">
+                </div>
+                <img src="../img/svg/flecha-marrom.svg" class="open-link" alt="flecha para abrir o link">
+            </a>
+            <a href="/torcicolo" class="swiper-slide">
+                <img class="back-image" src="../img/home/torcicolo.png" alt="Imagem de um rapaz de costas com uma mão posicionada sobre a nuca e outra nas costas">
+                <div class="text">
                     <p>Torcicolo e dor nas costas</p>
-                    <img src="../img/svg/flecha-marrom.svg" alt="flecha para abrir o link">
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <img src="../img/home/pediatrica.png" alt="Imagem de um bebê com uma mão de profissional massageando o pé">
-                <a class="text" href="osteopatia-pediatrica">
-                    <p>Osteopatia pediatrica</p>
-                    <img src="../img/svg/flecha-marrom.svg" alt="flecha para abrir o link">
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <img src="../img/home/gestantes.png" alt="Imagem de uma gestante deitada de barriga para cima com as mãos de um profissional sobre a barriga">
-                <a class="text" href="osteopatia-para-gestantes">
+                </div>
+                <img src="../img/svg/flecha-marrom.svg" class="open-link" alt="flecha para abrir o link">
+            </a>
+            <a href="/osteopatia-pediatrica" class="swiper-slide">
+                <img class="back-image" src="../img/home/pediatrica.png" alt="Imagem de um bebê com uma mão de profissional massageando o pé">
+                <div class="text">
+                    <p>Osteopatia pediátrica</p>
+                </div>
+                <img src="../img/svg/flecha-marrom.svg" class="open-link" alt="flecha para abrir o link">
+            </a>
+            <a href="/osteopatia-para-gestantes" class="swiper-slide">
+                <img class="back-image" src="../img/home/gestantes.png" alt="Imagem de uma gestante deitada de barriga para cima com as mãos de um profissional sobre a barriga">
+                <div class="text">
                     <p>Osteopatia para gestantes</p>
-                    <img src="../img/svg/flecha-marrom.svg" alt="flecha para abrir o link">
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <img src="../img/home/ciatico.png" alt="Imagem de uma pessoa deitada com um profissional pressionando a região da lombar">
-                <a class="text" href="nervo-ciatico">
+                </div>
+                <img src="../img/svg/flecha-marrom.svg" class="open-link" alt="flecha para abrir o link">
+            </a>
+            <a href="/nervo-ciatico" class="swiper-slide">
+                <img class="back-image" src="../img/home/ciatico.png" alt="Imagem de uma pessoa deitada com um profissional pressionando a região da lombar">
+                <div class="text">
                     <p>Nervo ciático</p>
-                    <img src="../img/svg/flecha-marrom.svg" alt="flecha para abrir o link">
-                </a>
-            </div>
+                </div>
+                <img src="../img/svg/flecha-marrom.svg" class="open-link" alt="flecha para abrir o link">
+            </a>
         </div>
     </div>
     <img src="../img/svg/prev.svg" class="swiper-button-prev" alt="flecha para voltar">
@@ -91,13 +93,14 @@ cssPath: "/css/home.css"
     </p>
     <div class="botoes">
         <a href="/tratamentos" class="brownButton">Saiba mais</a>
-        <a href="" class="whiteButton">Entre em contato</a>
+        <a href="https://api.whatsapp.com/send?phone=5541999683915&text=Estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." class="whiteButton">Entre em contato</a>
     </div>
     <img src="../img/home/arvore.png" alt="imagem de fundo">
 </div>
 
 
 <section class="espaco">
+    <h1 class="only-mobile">Nosso espaço</h1>
     <div class="left-espaco">
         <iframe 
             width="640" 
@@ -111,13 +114,13 @@ cssPath: "/css/home.css"
         </iframe>
     </div>
     <div class="right-espaco">
-        <h1>Nosso espaço</h1>
+        <h1 class="tablet-desktop">Nosso espaço</h1>
         <p>
             O consultório da Dra. Camila Gandolfo oferece conforto, tecnologia e um ambiente acolhedor. Com estacionamento próximo e vagas rotativas, a experiência começa com praticidade.<br/><br/>
             O espaço conta com equipamentos modernos, como a maca de flexão-distração automática, ideal para tratamentos precisos da coluna.<br/><br/>
             Cada detalhe foi pensado para proporcionar bem-estar e resultados reais.
         </p>
-        <a href="" class="brownButton">Agende sua consulta</a>
+        <a href="https://api.whatsapp.com/send?phone=5541999683915&text=Estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." class="brownButton">Agende sua consulta</a>
     </div>
 </section>
 
@@ -141,13 +144,14 @@ cssPath: "/css/home.css"
         slidesPerView: "auto",
         spaceBetween: 20,
         loop: true,
+        grabCursor: true,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
         breakpoints: {
-            640: {
-                spaceBetween: 20,
+            360: {
+                spaceBetween: 8,
             },
             768: {
                 spaceBetween: 40,

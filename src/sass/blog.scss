@@ -1,2 +1,58 @@
 @use 'index' as *;
 
+.blog{
+    width: 85%;
+    margin: 11rem auto 18rem;
+    h1{
+        font-size: 6rem;
+        line-height: 6rem;
+        letter-spacing: 5%;
+        font-weight: 400;
+        font-family: $ivy;
+        color: $verde-900;
+    }
+    h2{
+        font-size: 3rem;
+        line-height: 4.6rem;
+        letter-spacing: 0%;
+        color: $verde-900;
+        font-weight: 400;
+        margin: 2.2rem 0 8.7rem;
+    }
+    .blog-wrap{
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        row-gap: 4rem;
+        .blog-item{
+            a{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                img{
+                    aspect-ratio: 61/49;
+                    width: 61rem;
+                    height: auto;
+                    object-fit: cover;
+                }
+                .title{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    align-items: center;
+                    h3{
+                        font-size: 3rem;
+                        line-height: 4.6rem;
+                        letter-spacing: 0%;
+                        font-weight: 600;
+                        color: $verde-900;
+                    }
+                    p{
+                        padding: 1.5rem 4.5rem;
+                    }
+                }
+            }
+
+        }
+    }
+}
