@@ -99,14 +99,14 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      gap: 3vh;
+      gap: 4vh;
       position: absolute;
       background-color: $verde-900;
       top: 0;
       width: 100vw;
       right: 0;
       padding: 2.3rem 2.4rem 3.7rem;
-      height: 70vh;
+      height: 75vh;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
       z-index: 200;
       .links{
@@ -121,24 +121,8 @@
         height: 3.2rem; 
         margin-bottom: 13vh;
       }
-      .transparentButton{
-        margin-top: 12vh;
-      }
-      li:last-of-type{
-        align-self: center;
-      }
     }
 
-    ul {
-      gap: 0;
-
-      li {
-        position: relative;
-        a {
-          font-size: 1.3rem;
-        }
-      }
-    }
   }
   @media screen and (min-width: 701px) and (max-width: 1260px) {
     padding-right: 10%;
@@ -154,36 +138,6 @@
       cursor: pointer;
     }
 
-    label .hamburger {
-      position: absolute;
-      width: 30px;
-      height: 2px;
-      display: block;
-      -webkit-transform-origin: center;
-      transform-origin: center;
-      -webkit-transition: 0.5s ease-in-out;
-      transition: 0.5s ease-in-out;
-    }
-
-    label .hamburger:after,
-    label .hamburger:before {
-      -webkit-transition: 0.5s ease-in-out;
-      transition: 0.5s ease-in-out;
-      content: "";
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-
-    label .hamburger:before {
-      top: -10px;
-    }
-
-    label .hamburger:after {
-      bottom: -10px;
-    }
-
     label input {
       display: none;
     }
@@ -194,23 +148,6 @@
       margin-bottom: 0;
       padding-left: 0;
       top: -7.8rem;
-    }
-
-    label input:checked + .menu .hamburger {
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }
-
-    label input:checked + .menu .hamburger:after {
-      -webkit-transform: rotate(90deg);
-      transform: rotate(90deg);
-      bottom: 0;
-    }
-
-    label input:checked + .menu .hamburger:before {
-      -webkit-transform: rotate(90deg);
-      transform: rotate(90deg);
-      top: 0;
     }
 
     label input:checked + .menu + ul {
@@ -246,15 +183,6 @@
         position: relative;
         padding-bottom: 2rem;
         padding-top: 2rem;
-
-        span {
-          position: absolute;
-          left: 0;
-          width: 46%;
-          bottom: -0.2rem;
-          opacity: 0.2;
-          border: 1px solid #53565f;
-        }
         a {
           font-weight: 700;
           font-size: 1.8rem;
