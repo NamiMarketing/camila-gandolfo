@@ -17,7 +17,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/admin");
   
   eleventyConfig.addFilter("postDate", (dateObj, locale= 'pt-BR') => {
-    return DateTime.fromJSDate(dateObj).setLocale(locale).toFormat('MMMM yyyy');
+    let dateStr = DateTime.fromJSDate(dateObj)
+    .setLocale(locale)
+    .toFormat('MMMM, yyyy');
+  
+  return dateStr.charAt(0).toUpperCase() + dateStr.slice(1);
   });
    const md = new markdownIt({
       html: true,

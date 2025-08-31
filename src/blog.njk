@@ -18,15 +18,20 @@ cssPath: "/css/blog.css"
 
 
 <section class="blog">
-  <h1>Blog</h1>
-  <h2>Conteúdos pensados para o seu bem-estar.</h2>
+  <div class="blog-title">
+    <h1>Blog</h1>
+    <h2>Conteúdos pensados para o seu bem-estar.</h2>
+  </div>
   <div class="blog-wrap">
     {% for post in collections.post | reverse | limit (8) %}
       <div class="blog-item">
         <a href="{{ post.url }}">
           <img src="{{ post.data.thumbnail }}" alt="" />
           <div class="title">
+            <p class="date">{{ post.data.date | postDate }}</p>
             <h3>{{ post.data.title }}</h3>
+            <h4>{{ post.data.subtitle }}</h4>
+            <p class="description">{{ post.data.description }}</p>
             <p class="brownButton">Saiba mais</p>
           </div>
         </a> 

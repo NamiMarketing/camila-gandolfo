@@ -11,6 +11,8 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
+      - { label: "Subtítulo", name: "subtitle", widget: "string" }
+      - { label: "Descriçao", name: "description", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
       - { label: "Imagem", name: "thumbnail", widget: "image" }
       - { label: "Texto", name: "texto", widget: "markdown" }
