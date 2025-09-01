@@ -28,6 +28,8 @@ cssPath: "/css/pages.css"
           <img src="{{ thumbnail }}" alt="" />
         {% endif %} 
         <div class="right-info">
+            <h1>{{ title }}</h1>
+            <h2>{{ subtitle }}</h2>
              {{ texto | markdown | safe }}
             <p>
                 <b>
