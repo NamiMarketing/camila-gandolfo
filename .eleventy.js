@@ -67,17 +67,8 @@ module.exports = function (eleventyConfig) {
   );
 
   
-  eleventyConfig.setServerOptions({
-    middleware: [
-        function (req, res, next) {
-            if (req.statusCode === 404) {
-                res.writeHead(200, { "Content-Type": "text/html" });
-                res.end(require("fs").readFileSync("_site/404.html"));
-            } else {
-                next();
-            }
-        }
-    ]
+eleventyConfig.setServerOptions({
+  fallback: "_site/404.html"
 });
 
   return {
